@@ -1,0 +1,298 @@
+{% extends "index-base.html" %}
+{% block custom-head %}
+
+<!-- GET SATISFACTION CODE -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "ecochecks";
+  feedback_widget_options.placement = "left";
+  feedback_widget_options.color = "#778d4f";
+  feedback_widget_options.style = "idea";
+  
+ 
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+<script type="text/javascript">
+
+var has_custom_value = { };
+var fields = ["id_url", "id_hosting"];
+var default_values = { "id_url" : 'Enter your Domain Name', 
+    "id_hosting" : 'Enter your web host' };
+
+    
+var current_form = "id_check_form";
+
+var sifr_elements = ["id_check_form", "id_success_form", "id_fail_form"];
+var replaced_sifr_elements = { "id_check_form" : true };
+
+function replace_missing_sifr_elements() {
+    ecochecks.log("replace_missing_sifr_elements");
+    
+    for (var i = 0; i < sifr_elements.length; i++) {
+        var key = sifr_elements[i];
+        
+        if (replaced_sifr_elements[key] == true) {
+            continue;
+        }
+        
+        sifr_do_replacements();
+
+    }
+}
+
+function ab_has_custom_value(field_id) {
+    var field = $("#" + field_id)[0];
+    var default_value = default_values[field_id];
+    ecochecks.log("checking:  "  + field.value + " to " + default_value);
+    if (field.value.length == 0 || field.value == default_value) {
+        return false;
+    }
+    
+    return true;
+}
+
+function ab_blurred_field(field_id) {
+    var field = $("#"+field_id)[0];
+    var default_value = default_values[field_id];
+    
+    //if (field.value.length == 0 || field.value == default_value) {
+    if (!ab_has_custom_value(field_id)) {
+        field.value = default_value;
+        has_custom_value[field_id] = false;
+    } else {
+        has_custom_value[field_id] = true;
+        
+    }
+}
+
+function ab_focused_field(field_id) {
+    var field = $("#"+field_id)[0];
+    
+    if (!ab_has_custom_value(field_id)) {
+        field.value = "";
+    }
+}
+
+function submit_check_form() {
+    $("#id_check_form").fadeOut(function() {
+
+        for (var i = 0; i < fields.length; i++) {
+            var field_id = fields[i];
+            if (!has_custom_value[field_id]) {
+                ecochecks.log("setting value  " + field_id + " to null, was not custom val")
+                var field = $("#" + field_id)[0];
+                field.value = "";
+            }
+        }
+
+        $.getJSON("{% url check %}",
+            {   'url' : $("#id_url")[0].value, 
+                'company_name_or_url' : $("#id_hosting")[0].value },
+            on_check_result);        
+    });
+    
+}
+
+function on_check_result(data, status) {
+    if (status == "success") {
+        if (data['error'] != undefined) {
+            switch (data['error']) {
+                case "invalid-form":
+                    $("#id_check_form").fadeIn("fast", replace_missing_sifr_elements);
+                    break;
+                case "entity-not-found":
+                    $("#id_fail_form").fadeIn("fast", replace_missing_sifr_elements);
+                    break;
+                default:
+                    ecochecks.log("Unhandled error case: " + data['error']);
+            } // end switch
+            reset_check_form();
+            current_form = "id_fail_form";
+        } else if (data['success'] != undefined) {
+            $("#id_success_form").fadeIn("fast", replace_missing_sifr_elements);
+            current_form = "id_success_form";
+            
+            if (data['owner_id'] == null) {
+                $("#claim_button").show();
+                var new_href = "/domain/" + data['name'] + "/claim/";
+                $("#claim_button")[0].href = new_href;
+            } else {
+                $("#claim_button").hide();
+            }
+        }
+    } else {
+        ecochecks.log("Server error: Here's the status: " + status + "\n" + data);
+    }
+}
+
+function reset_check_form() {
+    ecochecks.log("Reset check form .........");
+    has_custom_value = { };
+
+    for (var i = 0; i < fields.length; i++) {
+        var field_id = fields[i];
+        ecochecks.log(default_values[field_id]);
+        $("#" + field_id)[0].value = default_values[field_id];
+    }
+    
+}
+
+function show_check_form() {
+
+    $("#" + current_form).fadeOut(function() {
+        reset_check_form();
+        current_form = "id_check_form"
+        $("#id_check_form").fadeIn("fast", replace_missing_sifr_elements);
+    });
+    
+    return false;
+}
+
+function show_code_editor() {
+    $("#badge_code").fadeOut(function() {
+        $("#badge_editor").fadeIn("fast", replace_missing_sifr_elements);
+        $("#id_success_form").unbind("submit");
+        $("#id_success_form").submit(hide_code_editor);
+    });
+    
+    return false;
+}
+
+function hide_code_editor(event) {
+    $("#badge_editor").fadeOut(function() {
+        $("#badge_code").fadeIn("fast", replace_missing_sifr_elements);    
+        
+        // unbind hide code editor
+        $("#id_success_form").unbind("submit");
+        // Bind to go back to check
+        $("#id_success_form").submit(function(event) { 
+            show_check_form();
+            return false;
+        });
+    });
+    
+    return false;
+}
+
+// This is too slow getting called because we're waiting for analytics
+$(document).ready(function() {
+    ecochecks.log("ready");
+   $("#id_check_form").submit(function(event) {
+       submit_check_form();
+       return false;
+   });
+   $("#id_fail_form").submit(function(event) {
+       show_check_form();
+       return false;
+   });
+   
+   $("#id_success_form").submit(function(event) {
+       show_check_form();
+       return false;
+   });
+   
+   $("#show_code_editor_button").click(function(event) {
+       show_code_editor();
+       return false;
+   });
+   
+});
+
+
+
+</script>
+
+{% endblock %}
+{% block greenblock %}
+<form method="POST" action="{% url check %}" class="carbonneutral"
+    id="id_check_form">
+	<h2 class="really">Is your company really</h2>
+	<h2 class="neutral">Carbon Neutral?</h2>
+	<h2 class="letssee">Lets see...</h2>
+	{% include 'blocks/errors.html' %}
+	{% include 'blocks/messages.html' %}
+	<label>Start by:</label>
+	<input type="text" name="url" value="Enter your Domain Name" class="domain"
+	    id="id_url"
+	    onblur="ab_blurred_field('id_url')"
+	    onfocus="ab_focused_field('id_url')" />
+	<div class="or"></div>
+	<label>If you’re just curious:</label>
+	<input type="text" name="company_name_or_url" value="Enter your web host" class="host" 
+	    id="id_hosting"
+	    onblur="ab_blurred_field('id_hosting')"
+        onfocus="ab_focused_field('id_hosting')" />
+	<input type="submit" value="" class="submit" name="submit" id="id_check_form_submit" />
+</form>
+<form method="get" action="" class="carbonneutral2" style="display: none"
+    id="id_fail_form">
+	<h2 class="congrats">Aw Oh!</h2>
+	<h2 class="fail"><img src="/images/h2-fail.png" alt="It looks as if your host is not on the Certified Green Hosting companies list.  " /></h2>
+	<h3 class="next">So whats next? Below are some links to a few companies we know are carbon neutral.  Click the link to see how they can help you contact us to help neutralize your companies carbon footprint.</h3>
+	<div class="hosts">
+		<div class="left">
+			<img src="/images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+		<div class="middle">
+			<img src="/images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+		<div class="right">
+			<img src="/images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+	</div>
+	<input type="submit" class="submit" name="submit" value="" id="id_fail_form_submit" />
+</form>
+<form method="get" action="" class="carbonneutral2" style="display:none" id="id_success_form">
+	<h2 class="congrats">Congratulations!</h2>
+	<h2 class="success">The host is listed as a carbon neutral company. Below is a badge that you can proudly promote on your site that you are truly enviromentally aware.</h2>
+	<div class="code" id="badge_code">
+		<div class="left">
+			<label>Preview:</label>
+			<div class="badge">
+				<img src="/images/badge.gif" alt="" />
+			</div>
+		</div>
+		<div class="right">
+			<textarea name="code"><a href="">Vivamus urna tellus, ornare sit amet ultrices e.html </a><a href="">Vivamusit amet ultrices .html </a><a href="">Vivamus urna tellus, ornare sit amet ultrices e.html </a></a></textarea>
+		
+			<a href="" class="customize" id="show_code_editor_button"></a>
+			<a href="" class="copy"></a>
+			<a href="" class="claim" id="claim_button"></a>
+		</div>
+	</div>
+	<div class="custom" style="display:none" id="badge_editor">
+		<div class="left">
+			<div class="badge">
+				<img src="/images/badge.gif" alt="" />
+			</div>
+			<div class="actions">
+				<a href="" class="save"></a>
+				<a href="" class="reset"></a>
+			</div>
+		</div>
+		<div class="right">
+			<label>Leaf:</label>
+			<input type="text" name="leaf" value="#334455" />
+			<label>Leaf Background:</label>
+			<input type="text" name="leafbg" value="#334455" />
+			<label>Border:</label>
+			<input type="text" name="border" value="#334455" />
+			<label>Text:</label>
+			<input type="text" name="text" value="#334455" />
+		</div>
+	</div>
+	<input type="submit" class="submit" name="submit" value=""  id="id_success_form_submit" />
+</form>
+{% endblock %}

@@ -1,0 +1,146 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-24T12:49:02.458926Z
+290
+eCommIT
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+manage.py
+file
+
+
+
+
+2010-10-10T16:08:49.000000Z
+ce57c1c6ba7d1cdee5a094597960507b
+2010-10-10T13:05:08.808101Z
+165
+developer
+
+akismet.py
+file
+
+
+
+
+2010-11-04T14:38:11.000000Z
+d0fb17f7f43885c2e942a06e60381378
+2010-11-04T07:07:17.252570Z
+227
+eCommIT
+has-props
+
+__init__.py
+file
+
+
+
+
+2010-10-10T16:08:49.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-10-10T13:05:08.808101Z
+165
+developer
+
+zinnia_media
+dir
+
+static
+dir
+
+settings.py
+file
+
+
+
+
+2010-11-23T16:11:06.000000Z
+43b96d1087cb2bf37613dcd80c8c5152
+2010-11-23T06:38:34.128199Z
+287
+eCommIT
+
+wiht_api.py
+file
+
+
+
+
+2010-11-04T14:38:11.000000Z
+7d29e5e83074e87a4fe316423699e769
+2010-11-04T07:07:17.252570Z
+227
+eCommIT
+
+uuid.py
+file
+
+
+
+
+2010-10-10T16:08:52.000000Z
+0cb626194c66555e567754b168439c9e
+2010-10-10T13:05:08.808101Z
+165
+developer
+
+templates
+dir
+
+local_settings.py
+file
+
+
+
+
+2010-11-04T14:38:11.000000Z
+36fdc5dcb03be98d3b330091aad98cc9
+2010-11-04T07:07:17.252570Z
+227
+eCommIT
+
+apps
+dir
+
+memcache_status
+dir
+
+tinymce
+dir
+
+fixtures
+dir
+
+urls.py
+file
+
+
+
+
+2010-11-12T16:16:56.000000Z
+3fcecc42eb1a7a1c9df48483128d5ac7
+2010-11-12T10:24:43.308831Z
+278
+eCommIT
+

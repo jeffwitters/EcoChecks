@@ -1,0 +1,35 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block green %}
+<form method="post" action="" class="carbonneutral">
+	<h2 class="really">Is your company really</h2>
+	<h2 class="neutral">Carbon Neutral?</h2>
+	<h2 class="letssee">Lets see...</h2>
+	<label>Start by:</label>
+	<!--
+	<input type="text" name="domain" id="id_domain" value="" class="domain" />
+	-->
+	{{ form.domain }}
+	<div class="error">
+        <span> {{form.domain.errors}}</span>
+    </div>
+	<div class="or"></div>
+	<!--
+	<label>If you’re just curious:</label>
+	<input type="text" name="hosting" id="id_hosting" value="" class="host" />
+	-->
+	{{ form.host }}
+	<div class="error">
+        <span> {{form.host.errors}}</span>
+    </div>
+	<input type="submit" value="" class="submit" name="submit" />
+</form>
+{% endblock %}

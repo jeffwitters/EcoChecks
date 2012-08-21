@@ -1,0 +1,40 @@
+8
+
+dir
+80
+http://admin@svn.ecochecks.org/ecochecks/trunk/ecochecks/templates/hosts
+http://admin@svn.ecochecks.org/ecochecks
+
+
+
+2010-06-10T23:55:45.606988Z
+75
+developer
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+hosts.html
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+310078deb5d0c0698a6d741f4d7354f7
+2010-06-10T23:55:45.606988Z
+75
+developer
+

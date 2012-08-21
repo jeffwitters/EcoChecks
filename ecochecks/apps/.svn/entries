@@ -1,0 +1,73 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/apps
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-23T07:29:00.094423Z
+289
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+hosts
+dir
+
+tagging
+dir
+
+mptt
+dir
+
+django_bitly
+dir
+
+__init__.py
+file
+
+
+
+
+2010-10-10T16:08:49.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-10-10T13:05:08.808101Z
+165
+developer
+
+BeautifulSoup
+dir
+
+zinnia
+dir
+
+domains
+dir
+
+templatetags
+dir
+
+contact
+dir
+
+account
+dir
+
+tweepy
+dir
+

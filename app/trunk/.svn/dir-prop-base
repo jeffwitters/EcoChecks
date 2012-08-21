@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 53
+*.swp
+*.pyc
+.DS_Store
+*~
+#*#
+svnignores.txt
+*.tmproj
+
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests
+END
+doctests.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/doctests.py
+END
+test_runner.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/test_runner.py
+END
+testcases.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/testcases.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/__init__.py
+END
+doctests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/doctests.txt
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/settings.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/tests/models.py
+END

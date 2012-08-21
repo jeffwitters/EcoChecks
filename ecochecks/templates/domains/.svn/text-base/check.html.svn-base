@@ -1,0 +1,55 @@
+{% extends "base_green.html" %}
+{% block title %}
+   Domain Check |
+{% endblock %}
+{% block extra_script %}
+<script type="text/javascript">
+	$(document).ready(function(){
+	    //showHostDomain('id_hosting', 'id_domain');
+		showHint('id_domain', 'Enter Your Domain Name');
+		showHint('id_host', 'Enter your web host');
+	});
+</script>
+<style>
+    input[type="submit"]::-moz-focus-inner{
+    border: none;
+    }
+</style>
+{% endblock %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block green %}
+<form method="post" action="" class="carbonneutral">
+    <div class="carbon_nuetral_container">
+
+    </div>
+	<label>Start by:</label>
+	<!--
+	<input type="text" name="domain" id="id_domain" value="" class="domain" />
+	-->
+	{{ form.domain }}
+	<div class="error">
+        <span> {{form.domain.errors}}</span>
+		<span> {{domain_errors}}</span>
+    </div>
+	<div class="or"></div>
+        <label>If you’re just curious:</label>
+	<!--
+	<label>If you’re just curious:</label>
+	<input type="text" name="hosting" id="id_hosting" value="" class="host" />
+	-->
+	{{ form.host }}
+	<div class="error">
+        <span> {{form.host.errors}}</span>
+		<span> {{host_errors}}</span>
+    </div>
+	<input type="submit" value="" class="submit" name="submit" />
+</form>
+{% endblock %}

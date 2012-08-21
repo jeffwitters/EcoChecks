@@ -1,0 +1,121 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/apps/mptt
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+locale
+dir
+
+tests
+dir
+
+managers.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+a851ec159c8b0eb61a7dd90a29d08db7
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+__init__.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+1fb9437b0bff02e428fcb76395947a71
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+signals.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+534cf2e3e576f24ae0bf34b42d1dd562
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+utils.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+105ec6bd95ab6bb2741c11bbe67ef4a0
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+exceptions.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+901eb22d99cca4eb118771b376d2253f
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+templatetags
+dir
+
+models.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+17c53faf8eafa23746ba736dcb5c7ca0
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+
+forms.py
+file
+
+
+
+
+2010-11-12T16:16:53.000000Z
+fcb98d07d08fbdaa9e8b3b863306ea02
+2010-11-12T09:57:24.621939Z
+273
+eCommIT
+

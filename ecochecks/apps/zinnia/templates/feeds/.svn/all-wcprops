@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds
+END
+pingback_title.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/pingback_title.html
+END
+pingback_description.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/pingback_description.html
+END
+entry_title.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/entry_title.html
+END
+comment_title.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/comment_title.html
+END
+discussion_title.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/discussion_title.html
+END
+entry_description.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/entry_description.html
+END
+comment_description.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/comment_description.html
+END
+discussion_description.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/discussion_description.html
+END
+trackback_title.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/trackback_title.html
+END
+trackback_description.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/feeds/trackback_description.html
+END

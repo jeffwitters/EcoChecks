@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ecochecks/!svn/ver/289/trunk/ecochecks/apps/zinnia/admin
+END
+category.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/admin/category.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/289/trunk/ecochecks/apps/zinnia/admin/__init__.py
+END
+entry.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/admin/entry.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/admin/forms.py
+END
+widgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/admin/widgets.py
+END

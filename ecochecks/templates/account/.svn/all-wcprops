@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ecochecks/!svn/ver/207/trunk/ecochecks/templates/account
+END
+password_reset_complete.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ecochecks/!svn/ver/178/trunk/ecochecks/templates/account/password_reset_complete.html
+END
+signup_success.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ecochecks/!svn/ver/207/trunk/ecochecks/templates/account/signup_success.html
+END
+password_reset_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ecochecks/!svn/ver/178/trunk/ecochecks/templates/account/password_reset_confirm.html
+END
+signup.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/207/trunk/ecochecks/templates/account/signup.html
+END
+password_reset_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ecochecks/!svn/ver/195/trunk/ecochecks/templates/account/password_reset_form.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/207/trunk/ecochecks/templates/account/login.html
+END
+password_reset_done.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ecochecks/!svn/ver/178/trunk/ecochecks/templates/account/password_reset_done.html
+END
+password_reset_email.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/account/password_reset_email.html
+END

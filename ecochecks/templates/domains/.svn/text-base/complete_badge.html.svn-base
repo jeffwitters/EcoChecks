@@ -1,0 +1,63 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Your Badge |
+{% endblock %}
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block extra_script %}
+
+<script type="text/javascript">
+	String.prototype.replaceAll = function(AFindText,ARepText){   
+		return this.replace(new RegExp(AFindText,"gm"),ARepText)   
+	}
+	$(document).ready(function(){
+		ZeroClipboard.setMoviePath('{{ host }}{{ MEDIA_URL }}swf/ZeroClipboard.swf');
+		clip = new ZeroClipboard.Client();
+		clip.setHandCursor( true );
+		//alert($('#badge_url').html());
+		str = $('#badge_url').html();
+		str = str.replaceAll("&lt;","<");
+		str = str.replaceAll("&gt;",">");
+		clip.setText(str);
+		clip.glue( 'clip_button', 'd_clip_button' );
+		$('#clip_button').focus();
+	});
+</script>
+
+{% endblock %}
+
+{% block green %}
+<form method="get" action="" class="carbonneutral2">
+				<h2 class="congrats">Congratulations!</h2>
+				<h2 class="success">Your host is listed as a carbon neutral company. Below is a badge that you can proudly promote on your site that you are truly enviromentally aware.</h2>
+				<div class="code">
+					<div class="left">
+						<label>Preview:</label>
+						<div class="badge">
+							<a href="/domains/{{domain.id}}/certificate">
+							<img src="{{ MEDIA_URL }}badge/{{ badge_file_name }}" alt=""/>
+							</a>
+						</div>
+					</div>
+					<div class="right">
+						<textarea name="code" value="" id="badge_url">
+<a href="{{ host }}/domains/{{domain.id}}/certificate"><img src="{{ host }}{{ MEDIA_URL }}badge/{{ badge_file_name }}" /></a>
+						</textarea>
+						<a href="{% url customize_domain domain.id %}" class="customize"></a>
+
+						<div id="d_clip_button">
+							<div id="clip_button" type="button"  class="copy"></div>
+						</div>
+					</div>
+					<a href="http://facebook.com/share.php?u=ecochecks.org" class="facebook"></a>
+					<a href="http://twitter.com/home?status=I just EcoChecked the domain {{domain.url}} and I am 100%25 C02 Neutral!" class="twitter"></a>
+				</div>
+				<a href="javascript:history.back();" class="previousbt" name="submit" value=""></a>
+			</form>
+{% endblock %}

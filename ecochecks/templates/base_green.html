@@ -1,0 +1,275 @@
+{% load nav_tags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% block title %}{% endblock %} Ecochecks.org</title>
+ 
+<link href="{{ MEDIA_URL }}css/style.css" rel="stylesheet" type="text/css" />
+<link href="{{ MEDIA_URL }}css/sifr.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+div.continue_reading:hover{
+        background-position:0 -48px;
+    }
+</style>
+<!--[if IE 6]>
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/style_ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/unitpngfix.js"></script>
+<![endif]-->
+<script src="{{ MEDIA_URL }}sifr/sifr.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}sifr/sifr-debug.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}sifr/sifr-config.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/application.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/ZeroClipboard.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAUBDYtP0W5KTRq6Q_GMLEcBSG7RNS7_ZLJCA8Dx0kVHoNgjGIBhRGIjj8TnA7KpBg98wnc4cJSN7rpQ"></script>
+<script src="{{ MEDIA_URL }}js/gfeedfetcher.js" type="text/javascript"></script>
+<script src="{{ MEDIA_URL }}js/gajaxscroller.js" type="text/javascript"></script>
+<meta name="description" content="Carbon Neutral Hosting Verification">
+<meta name="keywords" content="carbon neutral, green, hosting, verification">
+<meta name="copyright" content="2010">
+<meta name="author" content="Cartisien Interactive">
+<meta name="email" content="cartisien@cartisien.com">
+<meta name="Distribution" content="Global">
+<meta name="Rating" content="General">
+<meta name="Robots" content="INDEX,FOLLOW">
+<meta name="Revisit-after" content="1 Day">
+<link rel="shortcut icon" href="{{ MEDIA_URL }}images/favicon.ico">
+<link rel="image_src" href="{{ MEDIA_URL }}images/logo.jpg" />
+{% block extra_script %}{% endblock %}
+<script type="text/javascript">
+	$(document).ready(function(){
+		showHint('ddjhlh-ddjhlh', 'Your Email Address');
+	});
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="wrapper">
+		<div class="topnav">
+			{% block progress_bar %}{% endblock %}
+			<div class="links">
+				{% if user.is_authenticated %}
+					<a href="{% url zinnia_entry_archive_index %}" class="blog"></a>
+					<a href="{% url logout %}" class="logout"></a>
+					<a href="{% url domain_list %}" class="myprofile"></a>
+                    <span class="welcomeuser">Welcome {{ user.username }}</span>
+				{% else %}
+					<a href="{% url zinnia_entry_archive_index %}" class="blog"></a>
+					<a href="{% url signup %}" class="sign"></a>
+					<a href="{% url login %}" class="login"></a>
+				{% endif %}
+			</div><!-- end of links -->
+		</div><!-- end of top nav -->
+	</div><!-- end of wrapper -->
+</div><!-- end of header -->
+<div class="wrapper">
+	<div class="main">
+		<div class="navigation">
+			{% block top_nav %}{% top_nav "process" %}{% endblock %}
+		</div><!-- end of navigation -->
+		<div class="sidebar2">
+			<a href="/" class="logo"></a>
+			<div class="block">
+				<h2>FACT</h2>
+				Being carbon neutral, or having a net zero carbon footprint, refers to achieving net zero carbon emissions by balancing a measur ed amount of carbon released with an equivalent amount sequestered or offset.
+			</div><!-- end of block -->
+		</div><!-- end of sidebar -->
+		<div class="greenblock">
+			{% block green %}{% endblock %}
+		</div><!-- end of greenblock -->
+		<div class="bottom">
+			<div class="news">
+				<a href=" http://ecochecks.posterous.com/rss.xml" class="rss"></a>
+				<h2>Latest Eco News</h2>
+				<script type="text/javascript">
+					var cssfeed=new gfeedpausescroller("feed", "feedclass", 4000, "_new")
+					cssfeed.addFeed("CSS Drive", "http://pipes.yahoo.com/pipes/pipe.run?_id=7dcfe9e976d8f3eb3ec401bf38ae445d&_render=rss") //Specify "label" plus URL to RSS feed
+					cssfeed.displayoptions("date") //show the specified additional fields
+					cssfeed.setentrycontainer("div") //Wrap each entry with a DIV tag
+					cssfeed.filterfeed(10, "date") //Show 10 entries, sort by date
+					cssfeed.entries_per_page(1)
+					cssfeed.init()
+				</script>
+			</div><!-- end of news -->
+			<div class="tripple">
+				<div class="left">
+					<h3>Recent EcoCheck Awards</h3>
+					<ul class="awards">
+						{% block recent_award %}{% endblock %}
+					</ul>
+				</div><!-- end of left -->
+                                <div class="middle" style="padding-left:7px;">
+                                    <div class="what_is_echochecks_container">
+                                        <div class="what_is_echochecks_container_image">
+                                            &nbsp;
+                                        </div>
+                                        <div class="what_is_echochecks_container_header">
+                                        </div>
+                                        <div class="what_is_echochecks_container_text">
+                                            
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit. Praesent velit turpis,
+                                            tempor at molestie eget, tincidunt in enim.
+                                            Sed volutpat metus nunc, ut scelerisque libero.
+                                            Ut in dolor eget neque ornare bibendum non ut ante.
+                                            <br/><br/>
+                                            Vivamus pharetra auctor ornare.
+                                            <a href="#">
+                                                <div class="continue_reading">
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <!--
+					<h3>Our Partners</h3>
+					<div class="partners">
+						<a href="http://cartisien.com"><img src="{{ MEDIA_URL }}images/partner-catrisien.png" alt="" /></a>
+					</div>
+                                     -->
+				</div><!-- end of middle -->
+				<div class="right">
+                                    <div class="our_mission_container">
+                                        <div class="our_mission_container_header">
+                                        </div>
+                                        <div style="width:100%;">
+                                        <div class="clean_air_container"></div>
+                                        <div class="clean_air_container_text">Clean Air</div>
+                                        <div class="mission-border-bottom"></div>
+                                        <div style="width:100%;">
+                                        <div class="clean_hosting_container"></div>
+                                        <div class="clean_air_container_text">Honest Hosting Companies</div>
+                                        <div class="mission-border-bottom"></div>
+                                        </div>
+                                        <div style="width:100%;">
+                                        <div class="clean_services_container"></div>
+                                        <div class="clean_air_container_text">Sustainable Services</div>
+                                        
+                                        </div>
+                                    </div>
+					<!--
+                                    <h3>Spread the Word</h3>
+					<div class="social">
+                                                
+						<a href=""><img src="{{ MEDIA_URL }}images/social-digg.png" alt="" /></a>
+						<a href=""><img src="{{ MEDIA_URL }}images/social-2.png" alt="" /></a>
+                                                
+					</div>
+                                        -->
+					<!--
+                                        <div class="newsletter">
+						<h3>Stay in Touch!</h3>
+
+						<form method="post" action="http://silent7.createsend.com/t/r/s/ddjhlh/">
+							<input type="text" name="cm-ddjhlh-ddjhlh" id="ddjhlh-ddjhlh" value="Your Email Address" style="color:black;" />
+							<input type="submit" name="submit" value="" class="submit" />
+						</form>
+
+					</div>
+                                    -->
+
+				</div><!-- end of right -->
+			</div><!-- end of tripple -->
+		</div><!-- end of bottom -->
+	</div><!-- end of main -->
+        <div class="footer" style="height:100px;">
+            <div class="footer_left_container" style="width:260px;margin-right:17px;">
+                <a href="http://www.facebook.com/home.php?#!/pages/EcoChecks/107904242586494" target="_blank">
+                    <div class="facebook_container" style="margin-left:0px;">
+
+                    </div>
+                </a>
+
+                <a href="http://twitter.com/ecocheck" target="_blank" style="margin-left:3px;">
+                    <div class="twitter_container">
+
+                    </div>
+                </a>
+                <a href="http://www.youtube.com/user/ecochecks" target="_blank" style="margin-left:2px;margin-right:0px;">
+                    <div class="youtube_container" style="margin-right:12px;">
+
+                    </div>
+                </a>
+                <div class="copyright">
+                    &copy; {% now "Y"%} EcoChecks All Rights Reserved
+                </div>
+                <div class="facebook_button_container">
+                    <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2FEcoChecks%2F107904242586494&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:74px;" allowTransparency="true"></iframe>
+                </div>
+            </div>
+            <div class="footer_middle_container" style="width:200px;margin-left:0px;">
+                <div class="middle_container_div"><a href="{% url faq_view %}">FAQ's</a></div>
+                <div class="middle_container_div"><a href="{% url privacy_policy %}">Privacy Policy</a></div>
+                <div class="middle_container_div" style="padding-right:0px;"><a href="{% url terms_of_service %}">Terms of Service</a></div>
+            </div>
+            <div class="footer_right_container" style="width:420px;">
+                <div style="margin-left:5%;">
+                    <div class="middle_container_div" style="padding-right:8px;padding-left:35px;"><a href="{% url about_us %}">About EcoChecks</a></div>
+                <div class="middle_container_div" style="padding-right:8px;"><a href="{% url process_domain %}">The EcoChecks Process</a></div>
+                <div class="middle_container_div" style="padding-right:8px;"><a href="{% url host_list %}">Certified Host</a></div>
+                <div class="middle_container_div" style="padding-right:8px;"><a href="{% url contact_us %}">Contact Us</a></div>
+                <!--<div class="middle_container_div"><a href="http://twitter.com/ecocheck" target="_blank">Follow Us</a></div>-->
+                </div>
+                <div class="middle_container_div_rss">
+                    <a href="#">
+                        <div class="rss_container">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="footer">
+		<div class="copyright">
+			&copy; {% now "Y"%} EcoCheck All Rights Reserved
+		</div>
+		<div class="links">
+			<a href="{% url index_domain %}">About Eco Check</a>
+			<a href="{% url process_domain %}">Eco Check Process</a>
+			<a href="{% url host_list %}">Certified Host</a>
+			<a href="{% url contact_us %}">Contact Us</a>
+			<a href="http://twitter.com/ecocheck">Follow Us</a>
+			<a href="">RSS</a>
+		</div>
+	</div>
+        -->
+        <!-- end of footer -->
+</div><!-- end of wrapper -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "ecochecks";
+  feedback_widget_options.placement = "left";
+  feedback_widget_options.color = "#5f7245";
+  feedback_widget_options.style = "problem";
+  
+   var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8904467-2']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

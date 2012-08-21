@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} - Contact Us{% endblock %}
+{% block content %}
+<h6>what it is we do</h6>
+<h1>Contact Us</h1>
+
+<p>&nbsp;</p>
+<h2>Nam vel justo nisl. </h2>
+<p>
+	Nullam ante erat, rutrum nec facilisis eu, ultricies pulvinar nunc. Aenean vestibulum diam ut tortor auctor aliquet ut vitae tellus. Nulla nec est a nibh lobortis blandit. Phasellus gravida lacus quis justo accumsan vehicula. Nullam iaculis massa quis ante dapibus molestie. Nam adipiscing magna eget enim rhoncus vel semper lacus bibendum.  
+</p>
+<form method="POST" action="{% url contact %}">
+	<label>Name<span>*</span></label>
+	{{ form.name }}
+    <p>{{ form.name.errors }}</p>
+	<label>Email<span>*</span></label>
+	{{ form.email }}
+    <p>{{ form.email.errors }}</p>
+	<label>Message</label>
+	{{ form.message }}
+	<p>{{ form.message.errors }}</p>
+	<input type="submit" name="submit" class="submit" value="" />
+</form>
+{% endblock %}

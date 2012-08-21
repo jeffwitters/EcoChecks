@@ -1,0 +1,23 @@
+{% extends 'index-base.html' %}
+{% block greenblock %}
+<form method="get" action="" class="carbonneutral2">
+	<h2 class="congrats">Aw Oh!</h2>
+	<h2 class="fail"><img src="images/h2-fail.png" alt="It looks as if your host is not on the Certified Green Hosting companies list.  " /></h2>
+	<h3 class="next">So whats next? Below are some links to a few companies we know are carbon neutral.  Click the link to see how they can help you contact us to help neutralize your companies carbon footprint.</h3>
+	<div class="hosts">
+		<div class="left">
+			<img src="images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+		<div class="middle">
+			<img src="images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+		<div class="right">
+			<img src="images/img-1.gif" alt="" />
+			<a href="" class="visit"></a>
+		</div>
+	</div>
+	<input type="submit" class="submit" name="submit" value="" />
+</form>
+{% endblock %}

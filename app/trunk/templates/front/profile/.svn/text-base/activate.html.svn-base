@@ -1,0 +1,57 @@
+{% extends 'index-base.html' %}
+{% block custom-head %}
+<!-- custom sign in scripts -->
+<script language="javascript">
+function submit_activation()
+{
+    var form = document.getElementById('activate_form');
+    form.submit();
+    
+    return false;
+}
+
+function back_home() {
+    window.location = '{% url index %}';
+    return false;
+}
+
+
+$(document).ready(function() {
+    ecochecks.fade_errors_and_messages();
+    
+    $("#activate_form").submit(submit_activation);
+});
+
+</script>
+
+{% endblock %}
+{% block greenblock %}
+<form action="{% url profile-activate-empty %}" method="POST" class="carbonneutral2" id="activate_form">
+    <h2 class="congrats">Sign Up</h2>
+	<h2 class="success padded">Just need to activate your account ...</h2>
+   	{% if form.non_field_errors %}
+           <div class="error">
+               {% for error_message in form.non_field_errors %}
+                   <span>{{error_message}}</span>
+               {% endfor %}
+           </div>
+    {% endif %}
+    {% include "blocks/errors.html" %}
+    {% include "blocks/messages.html" %}
+   	<div class="signup">
+           <label>Activation Code:</label>
+           {{ form.code }}
+           {% if form.code.errors %}
+           <div class="error">
+               {% for error in form.code.errors %}
+               <span>{{ error }}</span>
+               {% endfor %}
+           </div>
+           {% endif %}
+           
+           <a href="#" class="send" onclick="submit_activation()"></a>
+       </div
+       <input type="submit" class="submit" name="" value="" />    
+</form>
+
+{% endblock %}

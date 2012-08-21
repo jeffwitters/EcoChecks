@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "home" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+	<div class="certificate">
+		<div class="certificate-wrapper">
+			<div class="certificate-content">
+				<h2 style="font-weight:normal;">CARBON NEUTRAL CERTIFICATION</h2>
+				<h2>of</h2>
+				<h3>{{domain.url}}</h3>
+				<h4>awarded on {{domain.awarded_date}}</h4>
+				<div class="info">
+					Sed pretium odio ac risus tristique volutpat. Etiam massa risus, malesuada aliquet tempor non, auctor eu eros. Aenean porttitor, libero id placerat posuere, mi turpis convallis elit, ut ornare elit magna eu orci. Curabitur sed lectus dolor, quis feugiat leo
+				</div>
+				<a href="" class="home"></a>
+			</div><!-- end of certificate content -->
+		</div><!-- end of certificate wrapper -->
+	</div><!-- end of certificate -->
+{% endblock %}
+

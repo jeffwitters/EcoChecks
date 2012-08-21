@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" action="{% url newsletter %}">
+    Email: {{ form.email }}
+    <p>{{ form.email.errors }}</p>
+    <input type="submit" name="submit" value="" class="submit" />
+</form>
+<p>You will be sent a confirmation email with a link for confirming your 
+    subscription</p>
+{% endblock %}

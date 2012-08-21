@@ -1,0 +1,80 @@
+{% load trails %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Carbon neutral hosting validation tool. See how green your interactive campaign truly is. ">
+<meta name="keywords" content="Carbon, Neutral, Hosting, Validation">
+<meta name="author" content="EcoCheck">
+<meta name="email" content="support@ecochecks.org">        
+<title>Is your Host Carbon Neutral? | Carbon Neutral Hosting Validation Tool | EcoCheck {% block title %}{% endblock %}</title>
+<link href="/styles/style.css" rel="stylesheet" type="text/css" />
+<link href="/styles/sifr.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+	<link rel="stylesheet" href="/styles/style_ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<script type="text/javascript" src="/unitpngfix.js"></script>
+<![endif]-->
+<script src="/js/ecochecks.js" type="text/javascript"></script>
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/sifr/sifr.js" type="text/javascript"></script>
+<script src="/sifr/sifr-debug.js" type="text/javascript"></script>
+<script src="/sifr/sifr-config.js" type="text/javascript"></script>
+<style type="text/css">
+ 		@import url(/styles/main.css);
+</style>
+{% block custom-head %}{% endblock %}
+</head>
+
+<body>
+<div class="header">
+	<div class="wrapper">
+		<div class="topnav">
+			<div class="links">
+				<a href="/blog/" class="blog"></a>
+			    {% if user.is_authenticated %}
+		    		<a href="{% url signoff %}" class="logout"></a>
+    				<a href="{% url profile %}" class="profile"></a>
+			    {% else %}
+				    <a href="{% url signup2 %}" class="signup"></a>
+				    <a href="{% url signon %}" class="login"></a>
+			    {% endif %}
+
+			</div><!-- end of links -->
+		</div><!-- end of top nav -->
+	</div><!-- end of wrapper -->
+</div><!-- end of header -->
+<div class="wrapper">
+	<div class="main">
+		<div class="navigation">
+			<ul>
+				<li class="first {% here_now about selected %}"><a href="{% url about %}">ABOUT ECOCHECK</a></li>
+				<li class="{% here_now process selected %}"><a href="{% url process %}">ECOCHECKS PROCESS</a></li>
+				<li class="{% here_now certified-hosts selected %}"><a href="{% url certified-hosts %}">CERTIFIED GREEN HOST</a></li>
+				<li class="{% here_now contact selected %}"><a href="{% url contact %}">CONTACT US</a></li>
+			</ul>
+		</div><!-- end of navigation -->
+		{% block base_1_content %}
+		{% endblock %}
+	</div><!-- end of main -->
+	<div class="footer">
+		<div class="copyright">
+			&copy; 2009 EcoCheck All Rights Reserved
+		</div>
+		<div class="links">
+			<a href="{% url about %}">About Eco Check</a>
+			<a href="{% url process %}">Eco Check Process</a>
+			<a href="{% url certified-hosts %}">Certified Host</a>
+			<a href="{% url contact %}">Contact Us</a>
+			<a href="http://twitter.com/ecocheck" target="ecochecks_twitter">Follow Us</a>
+			<a href="{% url rss-feed %}">RSS</a>
+		</div>
+	</div><!-- end of footer -->
+</div><!-- end of wrapper -->
+{% include 'blocks/tracking.html' %}
+{% block custom-footer %}{% endblock %}
+</body>
+</html>
+
+

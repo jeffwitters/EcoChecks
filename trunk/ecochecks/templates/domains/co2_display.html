@@ -1,0 +1,36 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block green %}
+	<form method="post" action="" class="carbonneutral">
+				<h2 class="congrats">Aw Oh!</h2>
+				<h2 class="success padded successwidth">
+				It looks as if your host is not on the Certified Green Hosting companies list.
+				</h2>
+				
+				<h3 class="next nextwidth">
+				Bellow shows the amount of CO2 produced since you created {{log.url}}, Click the right arrow to see what you can do to make this 0.
+				</h3>
+				<div class="co2_container" style="text-align:center;">
+					<div class="small co2offset">
+						<span style="font-style:italic">{{log.url}}</span>
+					</div>
+					<div class="large co2offset2">
+						.0903
+					</div>
+					<div class="small">
+						Tons of co2 ,produced since 2001
+					</div>
+				</div>
+				<a href="/domains/notapproved/" class="nextbt" name="submit" value=""></a>
+				<a href="javascript:history.back();" class="previousbt" name="submit" value=""></a>
+	</form>
+{% endblock %}
+

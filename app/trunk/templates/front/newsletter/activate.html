@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'blocks/messages.html' %}
+{% include 'blocks/errors.html' %}
+<h2>Subscription Confirmation</h2>
+<form action="{% url newsletter-activate-empty %}" method="POST">
+    <p>
+        {{ form.code }}
+    </p>
+    <p>{{ form.code.errors }}</p>
+    <input type="submit" name="submit" value="" class="submit">
+{% endblock %}

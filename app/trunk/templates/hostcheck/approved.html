@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="certificate">
+	<div class="certificate-wrapper">
+		<div class="certificate-content">
+			<h2>CARBON NEUTRAL CERTIFICATION</h2>
+			<h2>of</h2>
+			<h3>{{ domain_name.name }}</h3>
+			<h4>awarded on {{ hosting_company.approved_on|date:"F jS Y" }}</h4>
+			<div class="info">
+				Sed pretium odio ac risus tristique volutpat. Etiam massa risus, malesuada aliquet tempor non, auctor eu eros. Aenean porttitor, libero id placerat posuere, mi turpis convallis elit, ut ornare elit magna eu orci. Curabitur sed lectus dolor, quis feugiat leo
+			</div>
+			<a href="{% url index %}" class="home"></a>
+		</div><!-- end of certificate content -->
+	</div><!-- end of certificate wrapper -->
+</div><!-- end of certificate -->
+{% endblock %}

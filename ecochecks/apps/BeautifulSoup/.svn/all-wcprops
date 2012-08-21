@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/279/trunk/ecochecks/apps/BeautifulSoup
+END
+BeautifulSoupTests.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ecochecks/!svn/ver/279/trunk/ecochecks/apps/BeautifulSoup/BeautifulSoupTests.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/279/trunk/ecochecks/apps/BeautifulSoup/__init__.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/279/trunk/ecochecks/apps/BeautifulSoup/setup.py
+END
+BeautifulSoup.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ecochecks/!svn/ver/279/trunk/ecochecks/apps/BeautifulSoup/BeautifulSoup.py
+END

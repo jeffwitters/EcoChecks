@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ecochecks/!svn/ver/272/trunk/ecochecks/apps/django_bitly
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ecochecks/!svn/ver/272/trunk/ecochecks/apps/django_bitly/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/272/trunk/ecochecks/apps/django_bitly/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/272/trunk/ecochecks/apps/django_bitly/models.py
+END

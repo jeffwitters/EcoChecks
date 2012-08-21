@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "home" %}{% endblock %}
+
+{% block content %}
+	<h6>what it is we do</h6>
+			<h1>CO<sub>2</sub> OFFSET APPROACH</h1>
+			<h2>Your personal reduce and offset approach</h2>
+			If you’ve used our calculators to look at the size of your emissions, as well as offsetting them right now you can take other measures to reduce your carbon footprint directly. There are many ways to live a lower carbon lifestyle, and every one of them has a real impact on tackling climate change.
+			
+			<div class="list-item">
+				<h2>50 ideas for shrinking your carbon footprint</h2>
+				<p>Here are some recommendations to get you started. Avoid overwhelming yourself with drastic changes. It&rsquo;s best to view this process like you would if you were adopting healthy eating instead of going on a crash diet. So do one thing new each week or each month and see your carbon footprint shrink over time.</p>
+				<ul>
+				<li><a href="#home"><span style="color: #0000ff;"><strong> At home</strong></span></a></li>
+				<li><a href="#car"><span style="color: #0000ff;"><strong> Driving</strong></span></a></li>
+				<li><a href="#flying"><span style="color: #0000ff;"><strong> Flying</strong></span></a></li>
+				<li><a href="#office"><span style="color: #0000ff;"><strong> At the office</strong></span></a></li>
+				<li><a href="/climate/low-carbon-living/business-reduction-tips"><span style="color: #0000ff;"><strong> Business tips</strong></span></a></li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>At home</h2>
+				Reduce, Reuse, Recycle! Use our house calculator to find out how much CO2 you use. You can also get advice from the Energy Saving Trust. You might even be eligible for a grant to improve the efficiency of your home.
+				Heating conservation
+				<ul>
+				<li>Draughts waste a lot of energy by losing heat. One quick and relatively cheap win is to put a brush or seal on your doors to prevent air escaping round the edges. Letterboxes and keyholes also lose heat and can be covered too. Gaps in floorboards and skirting boards also let in draughts; you can fill in these gaps with newspaper, beading or sealant.</li>
+				<li>Stick aluminium foil or reflective panels behind radiators. This reflects heat back into the room rather than being absorbed into walls.</li>
+				<li>In winter close your curtains at night to stop heat escaping.</li>
+				<li>Make sure your loft has loads of insulation. It&rsquo;s one of the cheapest and easiest ways to save energy and will pay for itself in hardly any time.</li>
+				<li>Consider insulating your cavity walls.</li>
+				<li>You can reduce 50% of your heat loss through windows by installing double glazing, which in turn could cut your heating bill up to &pound;90 a year. Make sure they are properly installed though, as gaps around the outside will lose heat. (Visit the <a href="http://www.energysavingtrust.org.uk/Home-improvements/Home-insulation-glazing/Glazing" target="_blank">Energy Saving Trust</a> for more details)</li>
+				<li>Turn your thermostat down to 18&deg;C and put on an extra jumper. </li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>Electricity conservation</h2>
+				<ul>
+				<li>Switch to a renewable electricity supplier</li>
+				<li>Buy A-rated electrical appliances.</li>
+				<li>Switch to energy saving light bulbs, when your old bulbs break. They last around 10 times longer than ordinary light bulbs; they will save you money and come in loads of different styles.</li>
+				<li>Items left on standby can use up to 85% of the energy they would use if fully switched on. Turn them off at the wall &ndash; it doesn&rsquo;t take long.</li>
+				<li>Electric tumble dryers use a huge amount of energy. If it&rsquo;s a nice day dry your clothes outside or even inside if it&rsquo;s not so nice.</li>
+				<li>When using a washing machine ensure there is a full load and turn down the temperature.</li>
+				<li>If you have lights in your garden use solar powered lights that charge during the day and don&rsquo;t require electricity.</li>
+				<li>Take your phone charger out of the wall. It uses energy even when it&rsquo;s not charging your phone.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>Water savings</h2>
+				<ul>
+				<li>Make sure your hot water tank is insulated with a thick jacket. It will save you lots of money not to mention reducing emissions.</li>
+				<li>A dripping tap can be not only annoying but if it is a hot tap it can cost you in both water costs and water heating costs. Remember, water also has a carbon footprint associated with it from processing. </li>
+				<li>Always use the correct size saucepan, and when heating water only use the amount you need.</li>
+				<li>When making a cup of tea, only boil the amount of water that you need.</li>
+				<li>Turn off the tap while cleaning your teeth.</li>
+				<li>If your toilet cistern holds more than 6 litres of water (likely if it was installed before 2001) put a Hippo Water Saving device in it. </li>
+				<li>Have a shower instead of a bath, which uses far less energy and water.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>Food and the fridge</h2>
+				<ul>
+				<li>The location of your fridge can make a difference in how energy efficient it is. Make sure it is out of direct sunlight and not close to the oven. Keeping it against an outside wall will help the heat it generates escape easily, and always make sure that there is a few inches&rsquo; space all around the fridge so that air can circulate. </li>
+				<li>Make sure you defrost your fridge and freezer on a regular basis.</li>
+				<li>Only set your fridge to as cold as you need it and avoid keeping the door open for long periods of time as the more cold air that escapes, the harder the fridge has to work. You should check the seal regularly as well, if it is damaged then cold air will be escaping. </li>
+				<li>You should never put warm or hot food into the fridge as this will make the fridge work extra hard to try and keep it cold; always allow food to cool down first. </li>
+				<li>Defrost frozen food in the fridge as this helps to keep it cool as it thaws.</li>
+				<li>Buy locally produced organic food.</li>
+				<li>Eat less meat; producing 1 calorie of meat requires a lot more land and energy, compared to 1 calorie of vegetables.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>Driving Tips</h2>
+				<p>Cars are generally very energy inefficient and travelling by train, bus or bike is much better for the planet. If you can&rsquo;t manage without a car, changing your driving habits can help reduce its greenhouse emissions. Find out how much your car produces with our<a href="http://www.jpmorganclimatecare.com/@car"><span style="color: #0000ff;"><strong> car calculator</strong></span></a>.</p>
+				<ul>
+				<li>Anticipate road conditions and drive smoothly, avoiding sharp acceleration and heavy braking. This saves fuel and reduces accident rates. </li>
+				<li>Plan your journeys to avoid congestion, road works and getting lost. </li>
+				<li>Drive away immediately when starting from cold - idling to heat the engine wastes fuel and causes rapid engine wear. </li>
+				<li>Check your revs - change up before 2,500rpm (petrol) and 2,000rpm (diesel). </li>
+				<li>The most efficient speed depends upon the car in question but is typically around 55 - 65mph. Faster speed will greatly increase your fuel consumption. </li>
+				<li>Check your tyre pressures regularly - under-inflated tyres are dangerous and can increase fuel consumption by up to 3%. </li>
+				<li>If you're stuck in a jam, switch the engine off if you expect to be there for more than a minute or two. Cutting the engine will save fuel and reduce emissions.</li>
+				<li>Use air conditioning sparingly as it significantly increases fuel consumption. </li>
+				<li>Avoid short journeys - a cold engine uses almost twice as much fuel and catalytic converters can take five miles to become effective. Cycle or walk instead. </li>
+				<li>Accessories such as roof racks, bike carriers, and roof boxes significantly affect your car's aerodynamics and reduce fuel efficiency, so remember to remove them when not in use. </li>
+				<li>Get your car serviced regularly to keep it running efficiently.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>Flying<a name="flying"></a></h2>
+				<p>We realise that sometimes people have no choice but to fly but the best thing for the planet is if you don&rsquo;t fly at all, the resulting emissions can often represent the biggest chunk of your carbon footprint. Many short haul flights can be replaced by other forms of public transport such as trains or buses. In the meantime, if you have to fly you can offset your flight using our flight calculator.</p>
+				<ul>
+				<li>If you are feeling adventurous and have the time there are many options for travelling long haul without flying. There are many websites available offering advice on how to travel all over the world without flying.</li>
+				<li>When you have to fly, always consider if you can combine trips.</li>
+				<li>It&rsquo;s best to fly direct rather than stopping over, aeroplanes use a lot of fuel taking off and landing.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+			<div class="list-item">
+				<h2>At the Office<a name="office"></a></h2>
+				<p>A lot of the things you can do are the same as you would do in your home, but if you are feeling adventurous, you can always have a go at persuading your boss to go green as well! Why not point them in the direction of our business calculator?</p>
+				<ul>
+				<li>Only use the lights you need. Turn off lights in unused rooms. Better still; get your building to install occupancy sensors.</li>
+				<li>Turn off your computer monitor when you leave the office at the end of the day. </li>
+				<li>Do you really need those hard copies, or can you save it on your computer instead?</li>
+				<li>Print double-sided.</li>
+				<li>Open up - if you have windows you can open, use them to intelligently save energy.</li>
+				<li>Can you share a lift to get to work?</li>
+				<li>Perhaps see if you can teleconference and work from home occasionally.</li>
+				</ul>
+			</div><!-- end of list item -->
+			
+{% endblock %}

@@ -1,0 +1,52 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/static/js/tiny_mce/plugins/insertdatetime
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+editor_plugin.js
+file
+
+
+
+
+2010-11-03T14:54:50.000000Z
+d99072498466cdb2f53ed7c02da85982
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+editor_plugin_src.js
+file
+
+
+
+
+2010-11-03T14:54:50.000000Z
+6b6defce45d779cce199de549e03b8fb
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+

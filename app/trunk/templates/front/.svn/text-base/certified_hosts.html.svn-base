@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} - Certified Hosts{% endblock %}
+{% block content %}
+<h6>a few certified carbon neutral hosts</h6>
+<h1>CERTIFIED HOSTS</h1>
+<div class="host-list-item first">
+	<img src="/images/logo-1.png" alt="" class="left" />
+	<h2>DREAMHOST</h2>
+	Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.
+</div><!-- end host list item -->
+<div class="host-list-item">
+	<img src="/images/logo-2.png" alt="" class="left" />
+	<h2>AISO.NET</h2>
+	Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.
+</div><!-- end host list item -->
+<div class="host-list-item">
+	<img src="/images/logo-3.png" alt="" class="left" />
+	<h2>TAPROOT</h2>
+	Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.
+</div><!-- end host list item -->
+<div class="host-list-item">
+	<img src="/images/logo-4.png" alt="" class="left" />
+	<h2>GOTRYTHIS.com</h2>
+Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.
+</div><!-- end host list item -->
+<div class="host-list-item">
+	<img src="/images/logo-5.png" alt="" class="left" />
+	<h2>ECOSKY</h2>
+	Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.Nullam ante erat, rutrum nec facilisis eu.
+</div><!-- end host list item -->
+{% endblock %}

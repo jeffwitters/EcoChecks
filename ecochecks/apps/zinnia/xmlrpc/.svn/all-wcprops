@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/xmlrpc
+END
+pingback.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/xmlrpc/pingback.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/xmlrpc/__init__.py
+END
+metaweblog.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/xmlrpc/metaweblog.py
+END

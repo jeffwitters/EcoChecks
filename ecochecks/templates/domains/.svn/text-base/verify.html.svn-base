@@ -1,0 +1,48 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+    function submitForm(){
+        document.mainForm.submit();
+    }
+</script>
+{% endblock %}
+
+{% block green %}
+<form method="post" action="" class="carbonneutral2" name="mainForm">
+	<h2 class="congrats">Claim Your Domain</h2>
+	<h2 class="success padded">Before we can create your custom badge we need to know you're really the site owner.</h2>
+	<div class="htmlverify">
+		<div class="domain">
+1.<b>Download</b> this <a href="/domains/downloadhtml/?filename={{ filename }}">HTML verification file</a>.[{{ filename }}]
+<br>
+<br>
+2.<b>Upload</b> the file to <a href="http://{{domain.url}}">http://{{domain.url}}/</a>
+<br>
+<br>
+3.<b>Confirm</b> successful upload by visiting <a href="http://{{domain.url}}/{{ filename }}">http://{{domain.url}}/{{ filename }} </a>
+<br>in your browser.
+<br>
+<br>
+4.<b>Click</b> the verify button below.
+		
+		</div>
+		<div class="error">
+            <span> {{ error_info }}</span>
+        </div>
+        <input type="hidden" name="filename" value="{{filename}}">
+	</div>
+	<a href="/domains/" class="verify-later"></a>
+	<a href="javascript:submitForm();" class="verify"></a>
+	<a href="/domains/{{domain.id}}/verify_meta/" class="bymeta"></a>
+	<a href="/domains/check/" class="previousbt" name="submit" value=""></a>
+</form>
+{% endblock %}

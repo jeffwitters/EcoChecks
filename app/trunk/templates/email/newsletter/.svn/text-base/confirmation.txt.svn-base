@@ -1,0 +1,6 @@
+Please click on the link below to confirm your newsletter signup
+
+    {{ activation_url }}
+
+or go here: {{ activation_page_url }} and enter this code
+    {{ request.code }}

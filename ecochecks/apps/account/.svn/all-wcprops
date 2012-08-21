@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/165/trunk/ecochecks/apps/account/forms.py
+END

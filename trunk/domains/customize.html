@@ -1,0 +1,57 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block extra_script %}
+<style type="text/css" media="screen">
+    body {
+        background-color: #8DA559;
+    }
+
+    #wrapper {
+        width: 664px;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+
+    #flashContent {
+    }
+</style>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/swfobject.js">
+</script>
+<script type="text/javascript">
+
+    var flashvars = {
+        rootURL: "{% url upload_badge domain.id %}",
+        userId: ""
+    }
+    var params = {
+        menu: "false",
+        wmode: "transparent",
+    };
+    var attributes = {};
+
+    swfobject.embedSWF("{{ MEDIA_URL }}swf/EcoChecks.swf", "flashContent", "664", "258", "9.0.45", "{{ MEDIA_URL }}swf/expressInstall.swf", flashvars, params, attributes);
+
+    function savePhotoSuccess(userId){
+        document.location = '{% url complete_badge domain.id %}';
+    }
+</script>
+{% endblock %}
+{% block green %}
+<form method="get" action="" class="carbonneutral2">
+    <h2 class="congrats">Your Badge</h2>
+    <h2 class="customize">Congrats on passing the Carbon Neutral Host test. Now why dont you really make it your own and customize the badge. </h2>
+    <div id="wrapper">
+        <div id="flashContent">
+            <a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+        </div>
+    </div>
+	<a href="javascript:history.back();" class="previousbt" name="submit" value=""></a>
+	{% endblock %}

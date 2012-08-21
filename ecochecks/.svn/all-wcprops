@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ecochecks/!svn/ver/290/trunk/ecochecks
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ecochecks/!svn/ver/165/trunk/ecochecks/manage.py
+END
+local_settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ecochecks/!svn/ver/227/trunk/ecochecks/local_settings.py
+END
+akismet.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ecochecks/!svn/ver/227/trunk/ecochecks/akismet.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ecochecks/!svn/ver/165/trunk/ecochecks/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ecochecks/!svn/ver/287/trunk/ecochecks/settings.py
+END
+wiht_api.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ecochecks/!svn/ver/227/trunk/ecochecks/wiht_api.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ecochecks/!svn/ver/278/trunk/ecochecks/urls.py
+END
+uuid.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ecochecks/!svn/ver/165/trunk/ecochecks/uuid.py
+END

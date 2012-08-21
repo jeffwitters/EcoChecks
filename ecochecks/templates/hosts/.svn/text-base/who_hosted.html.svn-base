@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Who is Hosting |
+{% endblock %}
+{% block top_nav %}{% top_nav "whois" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<div class="content">
+	<div style="font-size:20px;color:#64822B;">Hosted By {{hosted_by}}</div>
+	 
+</div>
+{% endblock %}

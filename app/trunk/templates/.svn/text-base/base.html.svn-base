@@ -1,0 +1,28 @@
+{% extends 'base-1.html' %}
+{% block base_1_content %}
+		<div class="sidebar">
+			<a href="{% url index %}" class="logo"></a>
+			<div class="block">
+				{% include "blocks/fact.html" %}
+			</div><!-- end of block -->
+			<div class="block">
+				<h2>RECENT AWARDS</h2>
+				<ul>
+					<li><a href="">shaunmay.com</a></li>
+					<li><a href="">thepokernuthouse.co.za</a></li>
+					<li><a href="">jdpsteelprojects.co.za</a></li>
+					<li><a href="">endodontist.co.za</a></li>
+					<li><a href="">kapman.co.za</a></li>
+					<li><a href="">grooteschuur.com</a></li>
+					<li><a href="">goodorbad-today.com</a></li>
+				</ul>
+			</div><!-- end of block -->
+		</div><!-- end of sidebar -->
+		<div class="content">
+			{% include "blocks/errors.html" %}
+			{% include "blocks/messages.html" %}
+			{% block content %}
+			{% endblock %}
+		</div><!-- end of content -->
+
+{% endblock %}

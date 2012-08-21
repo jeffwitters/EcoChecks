@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+{% block top_nav %}{% top_nav "contact" %}{% endblock %}
+
+{% load recent_award_tags %}
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<h6>how to reach us</h6>
+<h1>Contact Us</h1>
+<p>&nbsp;</p>
+<h2></h2>
+<p>
+The easiest way to get in touch with EcoChecks is to fill out the form below. Also, feel free to contact us with service questions, partnership proposals, or media inquiries.</p>
+<form method="post" action="">
+	<label>Name<span>*</span></label>
+	{{ form.name }}
+	<div class="error">
+        <span> {{form.name.errors}}</span>
+    </div>
+	<label>Email<span>*</span></label>
+	{{ form.email }}
+	<div class="error">
+        <span> {{form.email.errors}}</span>
+    </div>
+	<label>Message</label>
+	{{ form.message }}
+	<div class="error">
+        {{form.message.errors}}
+    </div>
+	<input type="submit" name="submit" class="submit" value="" />
+</form>
+{% endblock %}

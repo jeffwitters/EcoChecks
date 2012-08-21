@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/management/commands
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/management/commands/__init__.py
+END
+wp2zinnia.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/management/commands/wp2zinnia.py
+END
+zinnia2wp.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/management/commands/zinnia2wp.py
+END
+spam_cleanup.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/management/commands/spam_cleanup.py
+END

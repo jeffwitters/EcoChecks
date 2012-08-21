@@ -1,0 +1,10 @@
+<html>
+<body>
+<p>
+Your code: '<b>{{ registration_token.code }}</b>'
+</p>
+<p>
+<a href="{{ activation_url }}">{{ activation_url }}</a>
+</p>
+</body>
+</html>

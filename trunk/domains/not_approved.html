@@ -1,0 +1,42 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block green %}
+	<form method="post" action="" class="carbonneutral2">
+				<h2 class="congrats">Aw Oh!</h2>
+				<h2 class="success padded successwidth">
+				It looks as if your host is not on the Certified Green Hosting companies list.
+				</h2>
+				<h3 class="next nextwidth">
+				So whats next?Bellow are some links to a few companies we know are carbon neutral.
+				Click the link to see how they can help you contract us to help neutralize you companies carbon footprint.
+				</h3>
+				<div class="hosts">
+					<div class="left leftoffset">
+						<h2 class="clickabove">Painless Migration</h2>
+						<h2 class="clickbellow painless">You can use our painless server migration and have our professional move your complete site from your existing host to a new green host.</h2>
+						<a href="/domains/painlessmigrate/" class="contactus"></a>
+					</div>
+					<div class="middle">
+						<h2 class="clickabove">Carbon Credits</h2>
+						<h2 class="clickbellow">We have partnered with several companied to purchase offset credits for you host if you are happy where you are.</h2>
+						<a href="" class="purchase"></a>
+					</div>
+					<div class="right">
+						<h2 class="clickabove">Self Install</h2>
+						<h2 class="clickbellow  install">If you feel confident in moving your site and server administration,use our list of preferred hosts and recieve a host discount.</h2>
+						<a href="/domains/certifiedhosts/" class="seelist"></a>
+					</div>
+				</div>
+
+				<a href="javascript:history.back();" class="previousbt"></a>
+	</form>
+{% endblock %}
+

@@ -1,0 +1,55 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Login |
+{% endblock %}
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+	$(document).ready(function(){
+	    showHint('id_username', 'Enter Your Username');
+	    showPassHint('id_password', 'pass_hint');
+	});
+</script>
+<style type="text/css">
+    input[type="submit"]::-moz-focus-inner{
+    border: none;
+    }
+    input.login:hover{
+        background-position:0 -44px;
+    }
+</style>
+{% endblock %}
+
+{% block green %}
+<form  method="post" action="" class="carbonneutral2">
+    {% csrf_token %}
+    <h2 class="signup_header">Login</h2>
+    {% if info %}
+		<h2 class="signup_header_sub_text">Your username and password didn't match. Please try again.</h2>
+	{% else %}
+		<h2 class="signup_header_sub_text">Please input your name and password......</h2>
+	{% endif %}
+
+    <div class="signup">
+    	{{ form.username }}
+        <div class="error">
+        </div>
+        {{ form.password }}
+       	<input type="text" id="pass_hint" value="Your Password" style="display:none;"/>
+        <div class="error">
+        </div>
+        <div>
+            <a href="/account/password_reset/" class="forgot_password_container">Forgot Your Password?</a>
+        </div>
+        <input type="submit" class="login" name="submit" value="" />
+        
+    </div>
+</form>
+{% endblock %}

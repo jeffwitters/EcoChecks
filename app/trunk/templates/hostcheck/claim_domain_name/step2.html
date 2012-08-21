@@ -1,0 +1,38 @@
+{% extends 'index-base.html' %}
+{% block custom-head %}
+
+<script language="javascript">
+function submit_validate() {
+    var form = document.getElementById('claim_domain_form');
+    
+    form.submit();
+    
+    return false;
+}
+</script>
+
+{% endblock %}
+{% block greenblock %}
+<form method="get" 
+    action="{% url claim-domain-step-two domain_name.name %}" 
+    class="carbonneutral2" id="claim_domain_form">
+	<h2 class="congrats">Claim Your Domain!</h2>
+	<h2 class="success padded">Before we can create your custom badge we need to know you're really the site owner.</h2>
+	{% include 'blocks/errors.html' %}
+    {% include 'blocks/messages.html' %}
+    
+	<div class="verify">
+		Create the HTML verification file specified below and upload it to '{{ domain_name.name }}'
+		<input type="text" name="" value="ecocheck{{ token.token }}.html" class="domain" />
+		<p>
+		Make sure you can view 
+		<a href="http://{{ domain_name.name }}/ecocheck{{ token.token }}.html" target="_blank">http://{{ domain_name.name }}/ecocheck{{ token.token }}.html</a> 
+		in your browser before verifying your site.
+		</p>
+	</div>
+	<!-- a href="" class="verify-later"></a -->
+	<a href="{% url claim-domain-step-two domain_name.name %}" class="verify"></a>
+	<!-- input type="submit" class="submit" name="submit" value="" / -->
+</form>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/apps/zinnia/locale/fr/LC_MESSAGES
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-12T10:15:57.461515Z
+276
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+django.po
+file
+
+
+
+
+2010-11-12T16:16:55.000000Z
+133fe507feceb67e981fec741b897f58
+2010-11-12T10:15:57.461515Z
+276
+eCommIT
+
+django.mo
+file
+
+
+
+
+2010-11-12T16:16:55.000000Z
+676a826065b926c43a907ecdee905aa0
+2010-11-12T10:15:57.461515Z
+276
+eCommIT
+has-props
+

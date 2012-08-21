@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/fixtures
+END
+helloworld.json
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/fixtures/helloworld.json
+END
+zinnia_test_data.json
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/fixtures/zinnia_test_data.json
+END

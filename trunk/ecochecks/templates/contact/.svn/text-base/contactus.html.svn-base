@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+{% block top_nav %}{% top_nav "contact" %}{% endblock %}
+
+{% load recent_award_tags %}
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<h6>what it is we do</h6>
+<h1>Contact Us</h1>
+<p>&nbsp;</p>
+<h2>Nam vel justo nisl. </h2>
+<p>
+	Nullam ante erat, rutrum nec facilisis eu, ultricies pulvinar nunc. Aenean vestibulum diam ut tortor auctor aliquet ut vitae tellus. Nulla nec est a nibh lobortis blandit. Phasellus gravida lacus quis justo accumsan vehicula. Nullam iaculis massa quis ante dapibus molestie. Nam adipiscing magna eget enim rhoncus vel semper lacus bibendum.
+</p>
+<form method="post" action="">
+	<label>Name<span>*</span></label>
+	{{ form.name }}
+	<div class="error">
+        <span> {{form.name.errors}}</span>
+    </div>
+	<label>Email<span>*</span></label>
+	{{ form.email }}
+	<div class="error">
+        <span> {{form.email.errors}}</span>
+    </div>
+	<label>Message</label>
+	{{ form.message }}
+	<div class="error">
+        {{form.message.errors}}
+    </div>
+	<input type="submit" name="submit" class="submit" value="" />
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Claim Domain Name: {{ domain_name.name }}</h2>
+
+{% include 'blocks/errors.html' %}
+{% include 'blocks/messages.html' %}
+<p>To claim a domain name you will be asked to place a file on the server on which the domain 
+name is hosted.  On the next page you will be shown the name of the file and instructions for 
+where to put it.  If you are sure you want to start the process of claiming this domain, click
+on the Next button</p>
+<form action="{% url claim-domain-step-two domain_name.name %}" method="POST">
+    <input type="submit" name="submit" value="Next" />
+</form>
+
+{% endblock %}

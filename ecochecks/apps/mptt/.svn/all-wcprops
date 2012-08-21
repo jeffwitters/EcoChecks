@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt
+END
+managers.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/managers.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/__init__.py
+END
+signals.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/signals.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/utils.py
+END
+exceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/exceptions.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/models.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/273/trunk/ecochecks/apps/mptt/forms.py
+END

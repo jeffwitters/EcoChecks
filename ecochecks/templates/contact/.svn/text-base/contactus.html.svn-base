@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Contact Us |
+{% endblock %}
+{% block top_nav %}{% top_nav "contact" %}{% endblock %}
+
+{% load recent_award_tags %}
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+
+{% block extra_script %}
+<script type="text/javascript">
+	$(document).ready(function(){
+	    showHint('id_name', 'Your Name');
+	    showHint('id_email', 'Your_eMail@gmail.com');
+	    showHint('id_message', 'Your normal email message');
+	});
+</script>
+<style type="text/css">
+    input[type="submit"]::-moz-focus-inner{
+    border: none;
+    }
+     input.contact:hover{
+        background-position:0 -44px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!--
+<h6>how to reach us</h6>
+<h1>Contact Us</h1>
+-->
+<h6>how to reach us</h6>
+<div class="contact-header-logo">
+
+</div>
+<p>&nbsp;</p>
+<h2></h2>
+    {% for contacttext in latest_contact_text  %}
+    {{contacttext.description|safe}}
+    {% endfor %}
+
+
+<form method="post" action="">
+	<label>Name<span>*</span></label>
+	{{ form.name }}
+	<div class="error">
+        <span> {{form.name.errors}}</span>
+    </div>
+	<label>Email<span>*</span></label>
+	{{ form.email }}
+	<div class="error">
+        <span> {{form.email.errors}}</span>
+    </div>
+	<label>Message</label>
+	{{ form.message }}
+	<div class="error">
+        {{form.message.errors}}
+    </div>
+	<input type="submit" name="submit" class="contact" value="" />
+</form>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Signup |
+{% endblock %}
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block extra_script %}
+<script type="text/javascript">
+$(document).ready(function(){
+    showHint('id_username', 'Enter Your Username');
+    showHint('id_email', 'Your Email Address');
+    showPassHint('id_password', 'pass_hint');
+});
+</script>
+<style type="text/css">
+    input[type="submit"]::-moz-focus-inner{
+    border: none;
+    }
+    input.signup:hover{
+        background-position:0 -44px;
+    }
+</style>
+{% endblock %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block green %}
+<form name="signupform" method="post" action="" class="carbonneutral2">
+    {% csrf_token %}
+    <h2 class="signup_header">Sign Up</h2>
+    <h2 class="signup_header_sub_text">We just need a few more things...</h2>
+    <!--
+    <h2 class="congrats">Sign Up</h2>
+
+    <h2 class="success padded">We just need a few more things...</h2>
+    -->
+    <div class="signup">
+		{{ form.username }}
+        <div class="error">
+        	<span> {{form.username.errors}}</span>
+        </div>
+		{{ form.email }}
+        <div class="error">
+            <span> {{form.email.errors}}</span>
+        </div>
+		{{ form.password }}
+        <input type="text" id="pass_hint" value="Your Password" style="display:none;"/>
+      	<div class="error">
+            <span> {{form.password.errors}}</span>
+        </div>
+		<input type="submit" class="signup" name="submit" value="" />
+    </div>
+</form>
+{% endblock %}

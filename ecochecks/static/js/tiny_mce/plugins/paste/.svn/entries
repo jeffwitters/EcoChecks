@@ -1,0 +1,82 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/static/js/tiny_mce/plugins/paste
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+editor_plugin.js
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+6e426764b0e2bd6e1481cc8dc7cf8ab8
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+pasteword.htm
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+8b5f581e20af686ddef2c629646b51f8
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+langs
+dir
+
+editor_plugin_src.js
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+60b723639c7031c07dbd5a48ba277e32
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+pastetext.htm
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+e394602fbea8bf517f64290ab4656a38
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+js
+dir
+

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/admin.py
+END
+generic.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/generic.py
+END
+managers.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/managers.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/settings.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/utils.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/models.py
+END
+fields.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/fields.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/forms.py
+END

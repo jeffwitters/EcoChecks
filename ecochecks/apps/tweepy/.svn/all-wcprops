@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy
+END
+api.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/api.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/error.py
+END
+streaming.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/streaming.py
+END
+cursor.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/cursor.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/__init__.py
+END
+parsers.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/parsers.py
+END
+oauth.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/oauth.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/utils.py
+END
+auth.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/auth.py
+END
+binder.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/binder.py
+END
+cache.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/cache.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ecochecks/!svn/ver/275/trunk/ecochecks/apps/tweepy/models.py
+END

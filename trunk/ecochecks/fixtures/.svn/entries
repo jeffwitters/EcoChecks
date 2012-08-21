@@ -1,0 +1,40 @@
+8
+
+dir
+80
+http://admin@svn.ecochecks.org/ecochecks/trunk/ecochecks/fixtures
+http://admin@svn.ecochecks.org/ecochecks
+
+
+
+2010-05-09T11:33:23.467522Z
+26
+developer
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+initial_data.json
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+9c5f49a8d84edcff77b163cc3e5c7c7a
+2010-05-09T11:33:23.467522Z
+26
+developer
+

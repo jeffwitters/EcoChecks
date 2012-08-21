@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+   FAQ Ecocheck |
+{% endblock %}
+{% load nav_tags %}
+{% load recent_award_tags %}
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+{{ flatpage.content }}
+</body>
+</html>
+{% endblock %}

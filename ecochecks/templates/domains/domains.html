@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load progress_bar_tags %}
+{% load nav_tags %}
+{% block title %}
+   Your Profile |
+{% endblock %}
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+{% block progress_bar %}{% progress_bar "progress_bar" %}{% endblock %}
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<style>
+    div.content .message{
+        background-color:#fff;
+        color:#000;
+        font-weight:bold;
+        padding:3px;
+    }
+</style>
+<div class="content">
+	<h6>Mysite@Gmail.com</h6>
+	<h1>YOUR PROFILE</h1>
+	<h2>Sites you have verified as being Green.</h2>
+	<p>
+		A great aspect of hosting on a server powered by 100% renewable energy is that you can advertise this fact on sites you develop for your clients. It will help those clients boost their own sales ─ a great selling feature for your own services you can highlight in proposals.
+	</p>
+        {% if message %}
+        <span class="message">{{ message }}</span>
+        {% endif %}
+	<table cellpadding="0" cellspacing="0" class="profile">
+		<tr>
+			<th class="leftalign" width="155">URL</th>
+			<th width="100">Host</th>
+			<th width="130">Date Awarded</th>
+			<th width="60">Edit</th>
+			<th width="75">Reverify</th>
+			<th width="55" class="rightalign">Remove</th>
+		</tr>
+		{% for domain in domains %}
+			<tr>
+			<td class="leftalign"><a href="http://{{ domain.url }}">{{ domain.url }}</a></td>
+			<td><a href="{{ domain.host.signup_url }}">{{ domain.host }}</a></td>
+			{% if domain.awarded_date %}
+				<td> {{ domain.awarded_date }} </td>
+			{% else %}
+				<td></td>
+			{% endif %}
+			<td><a href="/domains/{{domain.id}}/customize/" class="edit"></a></td>
+			<td><a href="/domains/{{domain.id}}/customize/" class="reverify"></a></td>
+			<td><a href="/domains/{{domain.id}}/delete/" class="remove"></a></td>
+		</tr>
+		{% endfor %}
+
+	</table>
+	<a href="{% url check_domain %}" class="add-a-site"></a>
+</div><!-- end of content -->
+{% endblock %}

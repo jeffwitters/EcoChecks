@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ecochecks/!svn/ver/240/trunk/ecochecks/templates/flatpages
+END
+privacypolicy.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ecochecks/!svn/ver/240/trunk/ecochecks/templates/flatpages/privacypolicy.html
+END
+termsofservice.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ecochecks/!svn/ver/240/trunk/ecochecks/templates/flatpages/termsofservice.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ecochecks/!svn/ver/192/trunk/ecochecks/templates/flatpages/default.html
+END
+faq.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/240/trunk/ecochecks/templates/flatpages/faq.html
+END

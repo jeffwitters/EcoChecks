@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templatetags
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templatetags/__init__.py
+END
+zbreadcrumbs.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templatetags/zbreadcrumbs.py
+END
+zcalendar.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templatetags/zcalendar.py
+END
+zinnia_tags.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templatetags/zinnia_tags.py
+END

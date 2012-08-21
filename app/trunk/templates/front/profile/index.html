@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<h6>{{ user.email }}</h6>
+<h1>YOUR PROFILE</h1>
+<h2>Sites you have verified as being Green.</h2>
+{% include 'blocks/errors.html' %}
+{% include 'blocks/messages.html' %}
+<p>
+	A great aspect of hosting on a server powered by 100% renewable energy is that you can advertise this fact on sites you develop for your clients. It will help those clients boost their own sales ─ a great selling feature for your own services you can highlight in proposals.
+</p>
+{% if domain_names %}
+
+<table cellpadding="0" cellspacing="0" class="profile">
+	<tr>
+		<th class="leftalign" width="155">URL</th>
+		<th width="100">Host</th>
+		<th width="130">Date Awarded</th>
+		<th width="60">Edit</th>
+		<!-- th width="75">Reverify</th -->
+		<!-- th width="55" class="rightalign">Remove</th -->
+	</tr>
+	{% for domain_name in domain_names %}
+    	<tr>
+    		<td class="leftalign"><a href="{% url check-domain-name domain_name.name %}">{{ domain_name.name }}</a></td>
+    		<td><a href="">{{ domain_name.hosting_company.name }}</a></td>
+    		<td>{{ domain_name.hosting_company.approved_on|date:"F jS, Y" }}</td>
+    		<td><a href="{% url customize-domain domain_name.name %}" class="edit"></a></td>
+    		<!-- td><a href="" class="reverify"></a></td -->
+    		<!-- td><a href="" class="remove"></a></td -->
+	</tr>
+	{% endfor %}
+</table>
+{% else %}
+    <h2>You have claimed no domains</h2>
+{% endif %}
+
+<a href="{% url index %}" class="add-a-site"></a>
+{% endblock %}

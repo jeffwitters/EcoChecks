@@ -1,0 +1,45 @@
+{% extends "base_green.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block extra_script %}
+<script type="text/javascript">
+	$(document).ready(function(){
+	    showHint('id_username', 'Enter Your Username');
+	    showPassHint('id_password', 'pass_hint');
+	});
+</script>
+{% endblock %}
+
+{% block green %}
+<form  method="post" action="" class="carbonneutral2">
+    {% csrf_token %}
+    <h2 class="congrats">Login</h2>
+    {% if info %}
+		<h2 class="error padded">Your username and password didn't match. Please try again.</h2>
+	{% else %}
+		<h2 class="success padded">Please input your name and password......</h2>
+	{% endif %}
+
+    <div class="signup">
+    	{{ form.username }}
+        <div class="error">
+        </div>
+        {{ form.password }}
+       	<input type="text" id="pass_hint" value="Your Password" style="display:none;"/>
+        <div class="error">
+        </div>
+        <div>
+        <a href="/account/password_reset/" style="float:left;height: 41px;width: 180px;position: relative;">Forget Your PassWord?</a>
+        </div>
+        <input type="submit" class="send" name="submit" value="" />
+        
+    </div>
+</form>
+{% endblock %}

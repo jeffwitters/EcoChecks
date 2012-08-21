@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "contact" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<h6>one way we can help</h6>
+<h1>PAINLESS MIGRATION</h1>
+<p>&nbsp;</p>
+<div class="list-item">
+	<h2>We can migrate your a complete copy of your old server to the new carbon neutral hosting for you.We just need a little information first.</h2>
+	In 2005, the amount of electricity consumed by data centers globally was equivalent to the production of 14 coal-fired 1,000-megawatt power plants. 
+</div>
+<form method="post" action="">
+	<label>Name<span>*</span></label>
+	{{ form.name }}
+	<div class="error">
+        <span> {{form.name.errors}}</span>
+    </div>
+    
+	<label>Email<span>*</span></label>
+	{{ form.email }}
+	<div class="error">
+        <span> {{form.email.errors}}</span>
+    </div>
+    
+    <label>Phone Number</label>
+	{{ form.phone_number }}
+	<div class="error">
+        <span> {{form.phone_number.errors}}</span>
+    </div>
+    
+    <label>URL<span>*</span></label>
+	{{ form.url }}
+	<div class="error">
+        <span> {{form.url.errors}}</span>
+    </div>
+    
+    <label>Current Host</label>
+	{{ form.current_host }}
+	<div class="error">
+        <span> {{form.current_host.errors}}</span>
+    </div>
+    
+	<label>Message</label>
+	{{ form.message }}
+	<div class="error">
+        {{form.message.errors}}
+    </div>
+    
+	<input type="submit" name="submit" class="painlesssubmit" value="" />
+</form>
+{% endblock %}

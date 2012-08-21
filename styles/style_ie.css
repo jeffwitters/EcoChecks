@@ -1,0 +1,7 @@
+* html body {
+	behavior: url(/styles/csshover.htc);
+}
+
+div {
+	zoom: 1;	
+}

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests/settings.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests/models.py
+END
+tags.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ecochecks/!svn/ver/274/trunk/ecochecks/apps/tagging/tests/tags.txt
+END

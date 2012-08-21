@@ -1,0 +1,69 @@
+{% extends 'index-base.html' %}
+{% block custom-head %}
+<!-- custom sign in scripts -->
+<script language="javascript">
+function submit_login()
+{
+    var signin_form = document.getElementById('signin_form');
+    signon_fr.clear_defaults();
+    signin_form.submit();
+    
+    return false;
+}
+
+function back_home() {
+    window.location = '{% url index %}';
+    return false;
+}
+
+var fields = { 'username': "Your username" };
+
+var signon_fr = null;
+
+$(document).ready(function() {
+    signon_fr = new form_replacement(fields);
+    ecochecks.fade_errors_and_messages();
+    
+    $("#signin_form").submit(submit_login);
+});
+
+</script>
+
+{% endblock %}
+{% block greenblock %}
+<form action="{% url signon %}" method="POST" class="carbonneutral2" id="signin_form">
+    <h2 class="congrats">Hi! Welcome back.</h2>
+	{% if form.non_field_errors %}
+        <div class="error">
+            {% for error_message in form.non_field_errors %}
+                <span>{{error_message}}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% include "blocks/errors.html" %}
+    {% include "blocks/messages.html" %}
+    
+	<div class="signup">
+        <label>Username:</label>
+        {{ form.username }}
+        {% if form.username.errors %}
+        <div class="error">
+            {% for error in form.username.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <label>Password:</label>
+        {{ form.password }}
+        {% if form.password.errors %}
+        <div class="error">
+            {% for error in form.password.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <a href="#" class="send" onclick="submit_login()"></a>
+    </div
+    <input type="submit" class="submit" name="" value="" />
+</form>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base-1.html' %}
+{% block base_1_content %}
+<div class="sidebar2">
+	<a href="{% url index %}" class="logo"></a>
+	<div class="block">
+		{% include "blocks/fact.html" %}
+	</div><!-- end of block -->
+</div><!-- end of sidebar -->
+<div class="greenblock">
+	{% block greenblock %}{% endblock %}
+</div><!-- end of greenblock -->
+<div class="bottom">
+	<div class="news">
+		<a href="{% url rss-feed %}" class="rss"></a>
+		<h2>Latest Eco News</h2>
+		{% if news_item %}
+		    <a href="{{ news_item.link }}">{{ news_item.text }}</a>
+		{% else %}
+		    No news!
+		{% endif %}
+	</div><!-- end of news -->
+	<div class="tripple">
+		<div class="left">
+			{% include "blocks/awards.html" %}
+		</div><!-- end of left -->
+		<div class="middle">
+			<h3>Our Partners</h3>
+			<div class="partners">
+				<a href=""><img src="/images/partner-catrisien.png" alt="" /></a>
+			</div>
+		</div><!-- end of middle -->
+		<div class="right">
+			<h3>Spread the Word</h3>
+			<div class="social">
+				<a href=""><img src="/images/social-digg.png" alt="" /></a>
+				<a href=""><img src="/images/social-2.png" alt="" /></a>
+			</div>
+			<div class="newsletter">
+				<h3>Stay in Touch!</h3>
+				<form method="post" action="{% url newsletter %}">
+					<input type="text" name="email" value="" />
+					<input type="submit" name="submit" value="" class="submit" />
+				</form>
+			</div>
+		</div><!-- end of right -->
+	</div><!-- end of tripple -->
+</div><!-- end of bottom -->
+
+{% endblock %}

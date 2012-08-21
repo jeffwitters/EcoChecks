@@ -1,0 +1,3 @@
+Your code: '{{ registration_token.code }}'
+{{ activation_url }}
+

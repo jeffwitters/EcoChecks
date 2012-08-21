@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ecochecks/!svn/ver/267/trunk/ecochecks/templates/domains
+END
+check.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ecochecks/!svn/ver/266/trunk/ecochecks/templates/domains/check.html
+END
+certified_hosts.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/certified_hosts.html
+END
+process.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/267/trunk/ecochecks/templates/domains/process.html
+END
+certificate.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/certificate.html
+END
+customize.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ecochecks/!svn/ver/180/trunk/ecochecks/templates/domains/customize.html
+END
+offset.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/offset.html
+END
+modify.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/modify.html
+END
+painless_migration.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/painless_migration.html
+END
+complete_badge.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ecochecks/!svn/ver/180/trunk/ecochecks/templates/domains/complete_badge.html
+END
+domains.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/267/trunk/ecochecks/templates/domains/domains.html
+END
+not_approved.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/not_approved.html
+END
+customize_badge.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/customize_badge.html
+END
+verify.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/verify.html
+END
+.complete_badge.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/.complete_badge.html
+END
+co2_display.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/co2_display.html
+END
+verify_meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ecochecks/!svn/ver/165/trunk/ecochecks/templates/domains/verify_meta.html
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/comments
+END
+comment_reply_email.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/comments/comment_reply_email.txt
+END
+comment_notification_email.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/comments/comment_notification_email.txt
+END
+zinnia_entry_preview.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ecochecks/!svn/ver/276/trunk/ecochecks/apps/zinnia/templates/comments/zinnia_entry_preview.html
+END

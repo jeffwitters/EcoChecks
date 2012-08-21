@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ecochecks/!svn/ver/269/trunk/ecochecks/templates/hosts
+END
+hosts.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ecochecks/!svn/ver/269/trunk/ecochecks/templates/hosts/hosts.html
+END
+who_hosted.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ecochecks/!svn/ver/241/trunk/ecochecks/templates/hosts/who_hosted.html
+END
+whoishosting.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ecochecks/!svn/ver/241/trunk/ecochecks/templates/hosts/whoishosting.html
+END

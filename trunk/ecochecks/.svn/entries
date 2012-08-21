@@ -1,0 +1,100 @@
+8
+
+dir
+80
+http://admin@svn.ecochecks.org/ecochecks/trunk/ecochecks
+http://admin@svn.ecochecks.org/ecochecks
+
+
+
+2010-06-12T22:28:45.458013Z
+80
+admin
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+manage.py
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+ce57c1c6ba7d1cdee5a094597960507b
+2010-05-21T14:32:35.180103Z
+43
+developer
+
+apps
+dir
+
+__init__.py
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2010-05-01T12:30:35.711553Z
+3
+developer
+
+static
+dir
+
+settings.py
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+92427acad5b77314ec1b489624a40ef9
+2010-06-07T07:56:30.371122Z
+72
+developer
+
+fixtures
+dir
+
+urls.py
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+b73dd083c9833af9e954b7caed0d93fe
+2010-05-27T05:56:27.960966Z
+52
+developer
+
+uuid.py
+file
+
+
+
+
+2010-06-12T22:29:59.000000Z
+0cb626194c66555e567754b168439c9e
+2010-05-10T13:06:05.744244Z
+27
+developer
+
+templates
+dir
+

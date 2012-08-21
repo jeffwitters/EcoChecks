@@ -1,0 +1,14 @@
+<ul>
+    <li class="first {% ifequal tab 'home' %}selected{% endifequal %}">
+        <a href="{% url index_domain %}">ABOUT ECOCHECK</a>
+    </li>
+    <li {% ifequal tab 'process' %}class="selected"{% endifequal %}>
+        <a href="{% url process_domain %}">ECOCHECKS PROCESS</a>
+    </li>
+    <li {% ifequal tab 'certified_list' %}class="selected"{% endifequal %}>
+        <a href="{% url host_list %}">CERTIFIED GREEN HOST</a>
+    </li>
+    <li {% ifequal tab 'contact' %}class="selected"{% endifequal %}>
+        <a href="{% url contact_us %}">CONTACT US</a>
+    </li>
+</ul>

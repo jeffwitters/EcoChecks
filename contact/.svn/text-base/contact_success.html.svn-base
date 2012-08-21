@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+
+{% block top_nav %}{% top_nav "contact" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<div class="content">
+	<h6>we'll be in touch</h6>
+	<h1>THANKS!</h1>
+	<div style="padding-top:30px;line-height:30px;">
+	Thanks <span style="font-weight: bold">{{ name }}</span> we received your message and will be touch shortly.<br>
+	In the meantime you should check out our <a><span style="font-weight: bold;color:black;">blog</span></a>. Be sure to follow us on
+	<a href="http://twitter.com/ecocheck" target="_blank"><span style="font-weight: bold;color:black;">Twitter</span></a>
+	and <a href="http://www.facebook.com/#!/pages/EcoChecks/107904242586494" target="_blank"><span style="font-weight: bold;color:black;">Facebook</span></a>!
+	</div>
+</div>
+{% endblock %}

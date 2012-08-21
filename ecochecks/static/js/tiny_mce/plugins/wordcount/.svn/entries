@@ -1,0 +1,52 @@
+8
+
+dir
+290
+http://jeff@svn.ecochecks.org/ecochecks/trunk/ecochecks/static/js/tiny_mce/plugins/wordcount
+http://jeff@svn.ecochecks.org/ecochecks
+
+
+
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d461e457-ffdc-4e77-bad9-32ecfdc8630f
+
+editor_plugin.js
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+2839ac2c2e6aa4a6e3e99ca40eb79b2f
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+
+editor_plugin_src.js
+file
+
+
+
+
+2010-11-03T14:54:51.000000Z
+c38df1bf1494e80220c0ba75399172a8
+2010-11-03T05:48:53.882797Z
+209
+eCommIT
+

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Check Domain Name</h2>
+
+{% include 'blocks/errors.html' %}
+{% include 'blocks/messages.html' %}
+
+<p>
+<b>{{ domain_name }}</b>
+</p>
+<p>
+<b>{{ hosting_company }}</b>
+</p>
+
+{% if domain_name.owner %}
+    This domain is claimed.
+    {% ifequal domain_name.owner user %}
+        You are the owner of this domain, check out its profile
+    {% else %}
+        -- not owner --
+    {% endifequal %}    
+{% else %}
+    This domain is not claimed:
+    {% if user.is_authenticated %}
+        <a href="{% url claim-domain-name domain_name.name %}">Claim this domain</a>
+    {% else %}
+        Sign on to claim this domain.
+    {% endif %}
+{% endif %}
+
+
+{% endblock %}

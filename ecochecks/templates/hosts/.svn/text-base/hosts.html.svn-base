@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load nav_tags %}
+{% block title %}
+   Certified Hosts |
+{% endblock %}
+{% block top_nav %}{% top_nav "certified_list" %}{% endblock %}
+
+{% load recent_award_tags %}
+
+{% block recent_award %}{% recent_award %}{% endblock %}
+
+{% block content %}
+<div class="content" style="padding-top:0px;">
+    <h6>a few certified carbon neutral hosts</h6>
+    <div class="hosts-header-logo">
+
+    </div>
+    <!--
+    <h6>a few certified carbon neutral hosts</h6>
+    <h1>CERTIFIED HOSTS</h1>
+    -->
+	{% if hosts %}
+		{% for host in hosts %}
+			{% if forloop.first %}
+                        <div class="host-list-item first" style="margin-bottom:10px;">
+		    {% else %}
+        <div class="host-list-item" style="margin-top:10px;padding-top:35px;">
+            {% endif %}
+
+            {% if host.logo %}
+            <div style="float:left;width:25%;">
+                <img src="{{ host.logo.url }}" alt="" class="left" />
+            </div>
+            {% else %}
+            <div style="width:25%;float:left;">
+                <img src="/static/images/no-logo.png" alt="" class="left" />
+            </div>
+            {% endif %}
+            <div style="float:left;width:75%;">
+                <div style="padding:10px;margin-left:20px;padding-top:0px;">
+                    <h2>{{ host.name|upper }}</h2>
+                </div>
+                <div style="margin-left:20px;padding:10px;padding-top:0px;">
+                    	{{ host.description|safe }}
+                </div>
+            </div>
+
+            {% if forloop.first %}
+        </div>
+        {% else %}
+    </div>
+    {% endif %}
+		{% endfor %}
+	{% endif %}
+</div>
+{% endblock %}

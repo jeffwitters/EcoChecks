@@ -1,0 +1,66 @@
+{% extends "base_green.html" %}
+
+{% block extra_script %}
+<script type="text/javascript">
+/*
+	$(document).ready(function(){
+	    ZeroClipboard.setMoviePath('{{ host }}{{ MEDIA_URL }}swf/ZeroClipboard.swf');
+	    var clip = new ZeroClipboard.Client();
+		clip.setHandCursor( true ); 
+	    clip.setText("哈哈");
+	    clip.glue("copy");
+	    $(window).resize(function(){
+    		clip.reposition();
+		});
+	});
+	*/
+	$(document).ready(function(){
+		clip = new ZeroClipboard.Client();
+		clip.setHandCursor( true );
+		clip.setText("哈哈");
+		clip.addEventListener('load', my_load);
+		clip.addEventListener('mouseOver', my_mouse_over);
+		alert(clip);
+		//clip.addEventListener('complete', my_complete);
+		clip.glue('id_copy');
+		clip.reposition();
+		function my_mouse_over(client) {
+			alert("mouser_over");
+			// we can cheat a little here -- update the text on mouse over
+			//clip.setText( $('fe_text').value );
+			clip.setText( 'test test' );
+		}
+		function my_load(client) {
+			alert("load");
+		}
+		$(window).resize(function(){
+    		clip.reposition();
+		});
+	});
+	
+</script>
+{% endblock %}
+
+{% block green %}
+<form method="get" action="" class="carbonneutral2">
+				<h2 class="congrats">Congratulations!</h2>
+				<h2 class="success">Your host is listed as a carbon neutral company. Below is a badge that you can proudly promote on your site that you are truly enviromentally aware.</h2>
+				<div class="code">
+					<div class="left">
+						<label>Preview:</label>
+						<div class="badge">
+							<img src="{{ MEDIA_URL }}images/badge.gif" alt="" />
+						</div>
+					</div>
+					<div class="right">
+						<textarea name="code" value="">
+<img src="{{ host }}{{ MEDIA_URL }}images/{{ badge_file_name }}" alt="" />
+						</textarea>
+					
+						<a href="" class="customize"></a>
+						<div id="id_copy" class="copy"></div>
+					</div>
+				</div>
+				<input type="submit" class="submit" name="submit" value="" />
+			</form>
+{% endblock %}

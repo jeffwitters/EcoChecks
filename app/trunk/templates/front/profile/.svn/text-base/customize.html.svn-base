@@ -1,0 +1,38 @@
+{% extends 'index-base.html' %}
+{% block custom-head %}
+<script language="javascript">
+function submit_form()
+{
+    window.location = "{%url profile %}";
+    return false;
+}
+</script>
+{% endblock %}
+{% block greenblock %}
+<form method="GET" action="" class="carbonneutral2" onsubmit="return submit_form();">
+	<h2 class="congrats">Your Badge</h2>
+	<h2 class="customize">Congrats on passing the Carbon Neutral Host test. Now why dont you really make it your own and customize the badge. </h2>
+	<div class="custom">
+		<div class="left">
+			<div class="badge">
+				<img src="images/badge.gif" alt="" />
+			</div>
+			<div class="actions">
+				<a href="" class="save"></a>
+				<a href="" class="reset"></a>
+			</div>
+		</div>
+		<div class="right">
+			<label>Leaf:</label>
+			<input type="text" name="leaf" value="#334455" />
+			<label>Leaf Background:</label>
+			<input type="text" name="leafbg" value="#334455" />
+			<label>Border:</label>
+			<input type="text" name="border" value="#334455" />
+			<label>Text:</label>
+			<input type="text" name="text" value="#334455" />
+		</div>
+	</div>
+	<input type="submit" class="submit" name="submit" value=""  />
+</form>
+{% endblock %}
